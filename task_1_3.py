@@ -3,9 +3,7 @@
 Вывести все склонения для проверки.'''
 
 for i in range(1, 21):
-    proc = "процент"
-    if 1 < i < 5:
-        proc = proc + "а"
-    elif i >= 5:
-        proc = proc + "ов"
-    print(i, proc)
+    percent = "процент"
+    if 1 < i < 5: proc = percent + "а"
+    elif i >= 5: proc = percent + "ов"
+    print(i, percent)

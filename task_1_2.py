@@ -16,12 +16,13 @@ print(list_cub)
 sum_number7 = 0 # сумма тех чисел списка, сумма цифр которых делится нацело на 7
 for el in list_cub:
     sum_digit_el = 0 # сумма цифр элемента списка
-    while el != 0:
+    item = el
+    while el:
         digit = el % 10 # цифра элемента списка
         sum_digit_el += digit
         el = el // 10
     if sum_digit_el % 7 == 0:
-        sum_number7 += sum_digit_el
+        sum_number7 += item
 print("Сумма тех чисел списка, сумма цифр которых делится нацело на 7 =", sum_number7)
 # b
 list_cub17 = []
@@ -32,12 +33,13 @@ print(list_cub17)
 sum_number7 = 0 # сумма тех чисел списка, сумма цифр которых делится нацело на 7
 for el in list_cub17:
     sum_digit_el = 0 # сумма цифр элемента списка
+    item = el
     while el != 0:
         digit = el % 10 # цифра элемента списка
         sum_digit_el += digit
         el = el // 10
     if sum_digit_el % 7 == 0:
-        sum_number7 += sum_digit_el
+        sum_number7 += item
 print("Сумма тех чисел списка, сумма цифр которых делится нацело на 7 =", sum_number7)
 # c
 for i in range(len(list_cub)): # модификация списка (el+17)
